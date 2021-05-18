@@ -3,7 +3,9 @@ function ViewStoryRoute() {
 
     return (
 
-        <div className="ViewStoryRoute"></div>
+        <div className="ViewStoryRoute">
+            
+        </div>
     )
 }
 
