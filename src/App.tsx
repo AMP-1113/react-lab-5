@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Coke from './SodaComponents/Coke';
+import Pepsi from './SodaComponents/Pepsi';
+import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+
+
+        {/* <Router>
+          <h1>Soda Wars</h1>
+          <nav>
+            <Link to="/coke">Coke</Link> {'     '}
+            <Link to="/pepsi">Pepsi</Link>
+          </nav>
+
+          <Switch>
+            <Route path="/coke" >
+              <Coke />
+            </Route>
+            <Route path="/pepsi" >
+              <Pepsi />
+            </Route>
+            <Route path="/">
+              <Redirect to="/coke" />
+            </Route>
+          </Switch>
+        </Router> */}
     </div>
   );
 }
