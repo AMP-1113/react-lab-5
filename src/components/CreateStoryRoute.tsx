@@ -16,23 +16,21 @@ function CreateStoryRoute() {
     function handleSubmit(e: FormEvent) {
         e.preventDefault();
 
-        // setWords([animal, place, item, name]);
-        //setAuthor(author);
+        setWords([animal, place, item, name]);
+        setAuthor(author);
 
         const story: Story = {
             title: author,
             words: [animal, place, item, name]
         } 
         console.log(story);
-        addStory(story);
+        const storyNum = addStory(story);
         console.log(stories);
         
-        // history.push('/');
+        history.push(`/stories/${storyNum}`);
         console.log(words);
     }
 
-
-    
     return (
         <form className="CreateStoryRoute" onSubmit={(e) => {handleSubmit(e)}}>
             <label>

@@ -24,4 +24,5 @@ return (
     </div>
 )
 }
+
 export default StoryViewer;

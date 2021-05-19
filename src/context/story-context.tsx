@@ -15,6 +15,7 @@ const defaultValue: StoryContextValue = {
 
 export const StoryContext = createContext(defaultValue);
 
+
 export function StoryContextProvider( { children } : { children: ReactNode }) {
     const [ stories, setStories ] = useState<Story[]>(examples); 
 
@@ -23,9 +24,9 @@ export function StoryContextProvider( { children } : { children: ReactNode }) {
         return stories.length;
     }
 
-    useEffect( () => {
-        console.log(stories)
-    }, [stories]) 
+    // useEffect( () => {
+    //     console.log(stories)
+    // }, [stories]) 
 
     return (
         <StoryContext.Provider value={{ stories, addStory }}>
