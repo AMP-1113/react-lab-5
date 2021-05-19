@@ -2,15 +2,11 @@ import { Story } from './Story'
 
 export const examples: Story[] = [
     {
-        title: "Bush",
-        words: ["Beat", "Bat", "Bust", "Belt" ]
+        title: "Bear",
+        words: ["bear", "the mall", "marbles", "Hank" ]
     },
     {
-        title: "Red",
-        words: ["Rash", "Rust", "Ripple", "Right" ]
-    },
-    {
-        title: "Smelt",
-        words: ["Suck", "Sell", "Swell", "Speech" ]
-    },
+        title: "Cat",
+        words: ["cat", "the Secretary of State", "socks", "Tina" ]
+    }
 ]

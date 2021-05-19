@@ -7,14 +7,14 @@ function Header() {
     return (
         <Router >
         <header className="Header">
-            <p>This is the header</p>
+            <h1>MAD LIBS</h1>
             <nav>
                 <ul>
                     <li>
                         <Link to="/stories">See Your Saved Stories</Link>
                     </li>
                     <li>
-                        <Link to="/create-store">Create a new story</Link>
+                        <Link to="/create-story">Create a new story</Link>
                     </li>
                 </ul>
             </nav>

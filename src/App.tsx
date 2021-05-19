@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-ro
 import Header from './components/Header';
 import ListStoriesRoute from './components/ListStoriesRoute';
 import { StoryContextProvider } from './context/story-context';
+import ViewStoryRoute from './components/ViewStoryRoute';
+import CreateStoryRoute from './components/CreateStoryRoute';
 
 function App() {
   return (
@@ -14,9 +16,16 @@ function App() {
         <StoryContextProvider >
           <Header />
           <Switch>
-            <Route>
+            <Route path="/stories/:num">
+              <ViewStoryRoute />
+            </Route>
+            <Route path="/stories">
+              <h3>Pick a Story</h3>
               <ListStoriesRoute />
-          </Route>
+            </Route>
+            <Route path="/create-story">
+              <CreateStoryRoute />
+            </Route>
           </Switch>
         </StoryContextProvider>
       </Router>
